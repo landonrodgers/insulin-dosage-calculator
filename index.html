@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <p>
+    <label for="n1">What is your current bloodsugar in mg/dL?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+    <!-- The pattern attribute can act as a fallback for browsers which
+         don't implement the number input type but support the pattern attribute.
+         Please note that browsers that support the pattern attribute will make it
+         fail silently when used with a number field.
+         Its usage here acts only as a fallback -->
+    <input type="number" min="70" max="500" step="1" id = "number1"
+           pattern="\d+">
+  </p>
+  <p>
+    <label for="n2">How many grams of carbohydrates are you going to eat?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+    <input type="number" min="0" max="500" step="1" id="number2"
+           pattern="\d+">
+  </p>
+  <p>
+    <label for="n3">One unit of insulin covers how many grams of carbohydrates?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+    <input type="number" min="0" max="30" step="1" id="number3"
+           pattern="\d+">
+  </p>
+  <p>
+    <label for="n4">One unit of insulin lowers your bloodsugar by how many mg/dL?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+    <input type="number" min="0" max="150" step="1" id="number4"
+           pattern="\d+">
+  </p>
+  <p>
+    <label for="n5">What is your target bloodsugar?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+    <input type="number" min="0" max="300" step="1" id="number5"
+           pattern="\d+">
+  </p>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+  <p>
+    <button>Calculate</button>
+  </p>
+<script>
+  function myFunction() {
+  var currentBg = document.getElementById("number1").value;
+  var carbsToEat = document.getElementById("number2").value;
+  var carbRatio = document.getElementById("number3").value;
+  var isf = document.getElementById("number4").value;
+  var target = document.getElementById("number5").value;
+  var toDose = (carbsToEat/carbRatio) + ((currentBg-target)/isf);
+  document.getElementById("demo").innerHTML = "Your calculated dose is: " + toDose + "U of rapid acting insulin.";
+  }
+  var carbsToEat = document.getElementById("n2")
+  
+</script>
+</html>
