@@ -1,0 +1,36 @@
+section {
+   border: 2px seagreen;
+   text-align: center;
+   border-style: solid;
+}
+
+p {
+    width: 60%;
+    text-align: right;
+    vertical-align: auto;
+}
+button {
+
+    text-align: center;
+}
+
+#test {
+    text-align: center;
+    padding-top: 0%;
+    margin: 1px;
+    width: 100%
+}
+#disclaimer {
+    border: 2px black;
+    text-align: center;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+div {
+    text-align: center;
+}
+
+#calculatedDoseBox {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
