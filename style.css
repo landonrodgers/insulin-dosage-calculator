@@ -2,6 +2,16 @@ section {
    border: 2px seagreen;
    text-align: center;
    border-style: solid;
+   padding: 5px;
+}
+
+h1 {
+    text-align: center;
+    background-color:#3492eb;
+    margin: 0;
+    margin-bottom: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 p {
@@ -10,7 +20,6 @@ p {
     vertical-align: auto;
 }
 button {
-
     text-align: center;
 }
 
@@ -26,6 +35,13 @@ button {
     border-style: solid;
     margin-bottom: 5px;
 }
+#Message {
+    border: 2px blue;
+    text-align: center;
+    border-style: solid;
+    margin-bottom: 5px;
+}
+
 div {
     text-align: center;
 }
