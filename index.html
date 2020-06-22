@@ -8,17 +8,9 @@
 <h1>
   Insulin Dosage Calculator
 </h1>
-<section id="Message">
-  This application is meant to be as clear and barrier free as possible. See the bottom of this page for more information and more clarification. 
-</section>
 <section>
   <p>
     <label for="n1">What is your current bloodsugar in mg/dL?<abbr title="This field is mandatory" aria-label="required">*</abbr></label>
-    <!-- The pattern attribute can act as a fallback for browsers which
-         don't implement the number input type but support the pattern attribute.
-         Please note that browsers that support the pattern attribute will make it
-         fail silently when used with a number field.
-         Its usage here acts only as a fallback -->
     <input type="number" min="70" max="500" step="1" id = "number1"
            pattern="\d+">
   </p>
